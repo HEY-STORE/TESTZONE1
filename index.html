@@ -1,0 +1,61 @@
+cat > index.html << 'EOF'
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEY, STORE! - Цифровые товары</title>
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="/" class="logo">
+                    <img src="assets/images/logo.svg" alt="HEY, STORE!" class="logo__image">
+                    <span class="logo__text">HEY, STORE!</span>
+                </a>
+                <nav class="nav">
+                    <a href="#products" class="nav__link">Товары</a>
+                    <a href="#about" class="nav__link">О нас</a>
+                    <a href="#contacts" class="nav__link">Контакты</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <h1 class="hero__title">HEY, STORE!</h1>
+                    <p class="hero__subtitle">Цифровые товары по лучшим ценам</p>
+                    <p class="hero__description">Подарочные карты, подписки и игровая валюта</p>
+                    <a href="#products" class="btn btn--primary">Смотреть товары</a>
+                </div>
+            </div>
+        </section>
+        <section class="products" id="products">
+            <div class="container">
+                <h2 class="section__title">Наши товары</h2>
+                <div class="products__grid">
+                    <div class="product-card"><div class="product-card__icon"></div><h3 class="product-card__title">Steam</h3><p class="product-card__description">Подарочные карты Steam</p><span class="product-card__price">от 500 ₽</span><a href="#" class="btn btn--secondary">Подробнее</a></div>
+                    <div class="product-card"><div class="product-card__icon product-card__icon--playstation"></div><h3 class="product-card__title">PlayStation Store</h3><p class="product-card__description">Карты оплаты PS</p><span class="product-card__price">от 1000 ₽</span><a href="#" class="btn btn--secondary">Подробнее</a></div>
+                    <div class="product-card"><div class="product-card__icon product-card__icon--xbox"></div><h3 class="product-card__title">Xbox Game Pass</h3><p class="product-card__description">Подписки Game Pass</p><span class="product-card__price">от 800 ₽</span><a href="#" class="btn btn--secondary">Подробнее</a></div>
+                    <div class="product-card"><div class="product-card__icon product-card__icon--apple"></div><h3 class="product-card__title">App Store & iTunes</h3><p class="product-card__description">Карты Apple</p><span class="product-card__price">от 1000 ₽</span><a href="#" class="btn btn--secondary">Подробнее</a></div>
+                    <div class="product-card"><div class="product-card__icon product-card__icon--spotify"></div><h3 class="product-card__title">Spotify</h3><p class="product-card__description">Премиум подписки</p><span class="product-card__price">от 200 ₽</span><a href="#" class="btn btn--secondary">Подробнее</a></div>
+                    <div class="product-card"><div class="product-card__icon product-card__icon--roblox"></div><h3 class="product-card__title">Roblox</h3><p class="product-card__description">Robux</p><span class="product-card__price">от 300 ₽</span><a href="#" class="btn btn--secondary">Подробнее</a></div>
+                    <div class="product-card"><div class="product-card__icon product-card__icon--fortnite"></div><h3 class="product-card__title">Fortnite</h3><p class="product-card__description">V-Bucks</p><span class="product-card__price">от 500 ₽</span><a href="#" class="btn btn--secondary">Подробнее</a></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id="contacts">
+        <div class="container">
+            <p class="footer__copyright">© 2025 HEY, STORE!</p>
+        </div>
+    </footer>
+</body>
+</html>
+EOF
