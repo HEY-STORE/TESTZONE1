@@ -1,24 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 680">
   <defs>
     <linearGradient id="claudeBg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#D4A574"/>
       <stop offset="100%" style="stop-color:#C4956A"/>
     </linearGradient>
+    <clipPath id="roundedClip">
+      <rect width="1050" height="680" rx="24" ry="24"/>
+    </clipPath>
   </defs>
-  <rect width="400" height="300" fill="url(#claudeBg)"/>
-  <!-- Claude Sparkle Icon -->
-  <g transform="translate(200, 150)">
-    <!-- Center dot -->
-    <circle cx="0" cy="0" r="8" fill="#FFFFFF"/>
-    <!-- Rays -->
-    <line x1="0" y1="-20" x2="0" y2="-55" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
-    <line x1="0" y1="20" x2="0" y2="55" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
-    <line x1="-20" y1="0" x2="-55" y2="0" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
-    <line x1="20" y1="0" x2="55" y2="0" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
-    <!-- Diagonal rays -->
-    <line x1="-14" y1="-14" x2="-38" y2="-38" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
-    <line x1="14" y1="-14" x2="38" y2="-38" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
-    <line x1="-14" y1="14" x2="-38" y2="38" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
-    <line x1="14" y1="14" x2="38" y2="38" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
+  <g clip-path="url(#roundedClip)">
+    <rect width="1050" height="680" fill="url(#claudeBg)"/>
+    <!-- Claude Sparkle Icon - официальный стиль -->
+    <g transform="translate(525, 340)">
+      <!-- Центральная точка -->
+      <circle cx="0" cy="0" r="12" fill="#FFFFFF"/>
+      <!-- Основные лучи (вертикальные и горизонтальные) -->
+      <path d="M0 -30 Q0 -60 0 -90" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" fill="none"/>
+      <path d="M0 30 Q0 60 0 90" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" fill="none"/>
+      <path d="M-30 0 Q-60 0 -90 0" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" fill="none"/>
+      <path d="M30 0 Q60 0 90 0" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" fill="none"/>
+      <!-- Диагональные лучи -->
+      <path d="M-21 -21 Q-42 -42 -63 -63" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" fill="none"/>
+      <path d="M21 -21 Q42 -42 63 -63" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" fill="none"/>
+      <path d="M-21 21 Q-42 42 -63 63" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" fill="none"/>
+      <path d="M21 21 Q42 42 63 63" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" fill="none"/>
+    </g>
   </g>
 </svg>

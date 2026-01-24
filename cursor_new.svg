@@ -1,22 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 680">
   <defs>
     <linearGradient id="cursorBg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#1a1a2e"/>
       <stop offset="100%" style="stop-color:#16213e"/>
     </linearGradient>
+    <clipPath id="roundedClip2">
+      <rect width="1050" height="680" rx="24" ry="24"/>
+    </clipPath>
   </defs>
-  <rect width="400" height="300" fill="url(#cursorBg)"/>
-  <!-- Cursor 3D Cube Icon -->
-  <g transform="translate(200, 150)">
-    <!-- Top face -->
-    <polygon points="0,-50 50,-25 0,0 -50,-25" fill="#A0A0A0"/>
-    <!-- Left face -->
-    <polygon points="-50,-25 0,0 0,50 -50,25" fill="#707070"/>
-    <!-- Right face -->
-    <polygon points="50,-25 0,0 0,50 50,25" fill="#505050"/>
-    <!-- Highlight edges -->
-    <line x1="0" y1="-50" x2="-50" y2="-25" stroke="#FFFFFF" stroke-width="1.5" opacity="0.3"/>
-    <line x1="0" y1="-50" x2="50" y2="-25" stroke="#FFFFFF" stroke-width="1.5" opacity="0.3"/>
-    <line x1="0" y1="0" x2="0" y2="50" stroke="#303030" stroke-width="1.5"/>
+  <g clip-path="url(#roundedClip2)">
+    <rect width="1050" height="680" fill="url(#cursorBg)"/>
+    <!-- Cursor 3D Cube Icon -->
+    <g transform="translate(525, 340) scale(1.8)">
+      <!-- Верхняя грань -->
+      <polygon points="0,-60 70,-30 0,0 -70,-30" fill="#B0B0B0"/>
+      <!-- Левая грань -->
+      <polygon points="-70,-30 0,0 0,60 -70,30" fill="#808080"/>
+      <!-- Правая грань -->
+      <polygon points="70,-30 0,0 0,60 70,30" fill="#606060"/>
+    </g>
   </g>
 </svg>
