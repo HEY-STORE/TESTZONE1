@@ -336,7 +336,7 @@ button.theme-toggle svg {
 
 /* Специальные стили для Cursor */
 .product-card.cursor-card .product-icon {
-    background: #1e1e1e;
+    background: #14120b;
 }
 
 .product-card.cursor-card .product-icon::before {
