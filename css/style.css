@@ -208,11 +208,11 @@ button.theme-toggle svg {
 }
 
 .category-btn:hover {
-    background-color: var(--primary);
-    color: var(--primary-foreground);
-    border-color: var(--primary);
+    background-color: #0ea5e9;
+    color: #ffffff;
+    border-color: #0ea5e9;
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 8px rgba(14, 165, 233, 0.3);
 }
 
 /* Секция продуктов */
