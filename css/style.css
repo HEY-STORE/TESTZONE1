@@ -305,9 +305,11 @@ button.theme-toggle svg {
 }
 
 .product-icon-inner {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    padding: 0;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -322,9 +324,6 @@ button.theme-toggle svg {
     object-fit: cover;
     object-position: center;
     display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 .product-info {
