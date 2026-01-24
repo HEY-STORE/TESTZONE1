@@ -286,13 +286,13 @@ button.theme-toggle svg {
 .product-icon {
     position: relative;
     width: 100%;
-    height: 200px;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: transparent;
+    background: linear-gradient(135deg, #1e5a8e 0%, #2d7fb8 100%);
+    min-height: 180px;
     border-radius: 16px 16px 0 0;
-    overflow: hidden;
 }
 
 .product-icon::before {
@@ -305,11 +305,9 @@ button.theme-toggle svg {
 }
 
 .product-icon-inner {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
     width: 100%;
-    height: 100%;
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -319,11 +317,32 @@ button.theme-toggle svg {
 }
 
 .product-icon img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center;
+    width: 110%;
+    height: 110%;
+    object-fit: cover;
     display: block;
+}
+
+/* Специальные стили для Claude */
+.product-card.claude-card .product-icon {
+    background: #FAF9F6;
+}
+
+.product-card.claude-card .product-icon img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+}
+
+/* Специальные стили для Cursor */
+.product-card.cursor-card .product-icon {
+    background: #1a1a1a;
+}
+
+.product-card.cursor-card .product-icon img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
 }
 
 .product-info {
