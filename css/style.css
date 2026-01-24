@@ -336,13 +336,32 @@ button.theme-toggle svg {
 
 /* Специальные стили для Cursor */
 .product-card.cursor-card .product-icon {
-    background: #1a1a1a;
+    background: #1e1e1e;
+}
+
+.product-card.cursor-card .product-icon::before {
+    display: none;
 }
 
 .product-card.cursor-card .product-icon img {
     width: 70%;
     height: 70%;
     object-fit: contain;
+}
+
+/* Специальные стили для ChatGPT */
+.product-card.chatgpt-card .product-icon {
+    background: #10a37f;
+}
+
+.product-card.chatgpt-card .product-icon::before {
+    display: none;
+}
+
+.product-card.chatgpt-card .product-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .product-info {
